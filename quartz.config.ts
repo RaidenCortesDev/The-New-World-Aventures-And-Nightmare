@@ -2,21 +2,19 @@ import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
 /**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
+ * Configuración de New World Aventures And Nightmare 
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "The New World Aventures And Nightmare", 
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    locale: "es-ES",
+    baseUrl: "the-new-world-aventures-and-nightmare.onrender.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -29,25 +27,25 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#fcfaf2", // Fondo tipo papel/pergamino claro
+          lightgray: "#e5e5e5", // Bordes suaves
+          gray: "#999999", // Metadatos
+          darkgray: "#4e4e4e", // Texto principal (gris oscuro, no negro puro)
+          dark: "#2b2b2b", // Títulos
+          secondary: "#9a1e1e", // Rojo sangre seco (más elegante en fondo claro)
+          tertiary: "#6e1414", // Rojo más oscuro al pasar el mouse
+          highlight: "rgba(154, 30, 30, 0.07)",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#0f0f0f",       // Fondo negro profundo
+          lightgray: "#282828",   // Bordes oscuros
+          gray: "#646464",        // Metadatos
+          darkgray: "#d4d4d4",    // Texto principal (gris claro)
+          dark: "#ffffff",        // Títulos (blanco)
+          secondary: "#ff3e3e",   // Rojo brillante (resalta en la oscuridad)
+          tertiary: "#9a1e1e",    // Rojo sangre al pasar el mouse
+          highlight: "rgba(255, 62, 62, 0.1)",
           textHighlight: "#b3aa0288",
         },
       },
