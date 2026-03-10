@@ -1,1 +1,3 @@
 [[Acción]]
+[[Suspenso]]
+[[Terror]]
