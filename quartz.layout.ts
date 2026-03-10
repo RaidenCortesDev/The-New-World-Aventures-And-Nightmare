@@ -10,7 +10,6 @@ export const sharedPageComponents: SharedLayout = {
     links: {
     "The New World Aventures And Nightmare": "https://the-new-world-aventures-and-nightmare.onrender.com/",
     //"Comunidad": "https://discord.com",
-    "Quartz": "https://quartz.jzhao.xyz/",
   },
   }),
 }

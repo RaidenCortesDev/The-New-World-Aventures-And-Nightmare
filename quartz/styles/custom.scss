@@ -2,24 +2,36 @@
 
 // put your custom CSS here!
 footer {
-    text-align: center;
-    border-top: 1px solid var(--lightgray);
-    padding-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse; // Esto voltea el orden: primero links, luego el texto
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
 
-    // Estilo para el crédito de Quartz
-    p {
-        font-size: 0.8rem; // Más pequeño y elegante
-        opacity: 0.6; // Un poco transparente para que no robe cámara
-        color: var(--gray);
+    // Estilo para los links (tus links en rojo)
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        padding: 0;
+
+        li a {
+            color: var(--secondary) !important;
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
-    // Estilo para tus links
-    ul li a {
-        font-weight: bold;
-        color: var(--secondary); // El rojo carmesí que elegiste
-
-        &:hover {
-            color: var(--tertiary);
-        }
+    // Estilo para el texto de "Creado con Quartz" (abajo y discreto)
+    p {
+        font-size: 0.75rem;
+        color: var(--gray);
+        opacity: 0.5;
+        order: 2; // Asegura que quede al final
     }
 }
