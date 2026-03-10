@@ -1,3 +1,25 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+footer {
+    text-align: center;
+    border-top: 1px solid var(--lightgray);
+    padding-top: 2rem;
+
+    // Estilo para el crédito de Quartz
+    p {
+        font-size: 0.8rem; // Más pequeño y elegante
+        opacity: 0.6; // Un poco transparente para que no robe cámara
+        color: var(--gray);
+    }
+
+    // Estilo para tus links
+    ul li a {
+        font-weight: bold;
+        color: var(--secondary); // El rojo carmesí que elegiste
+
+        &:hover {
+            color: var(--tertiary);
+        }
+    }
+}
