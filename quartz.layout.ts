@@ -26,7 +26,20 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-    Component.PageTitle(),
+    //Component.PageTitle(),
+    Component.Graph({
+      localGraph: {
+        depth: 2,           // Muestra conexiones de segundo nivel (clave para que no se vea vacío)
+        linkDistance: 50,
+        repulsion: 400,
+        fontSize: 0.6,
+      },
+      globalGraph: {
+        depth: -1,          // El mapa global siempre muestra TODO
+        linkDistance: 100,
+        repulsion: 800,
+      },
+    }),
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
@@ -38,7 +51,17 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    //Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => {
+        // Filtro para que NO muestre archivos que se llamen "index" 
+        // o que tengan el mismo nombre que su carpeta
+        const isIndex = node.name.toLowerCase() === "index"
+        const isDuplicate = node.name === node.parent?.name
+        return !isIndex && !isDuplicate
+      },
+      useSavedState: true,
+    })
   ],
   right: [
     Component.Graph(),
