@@ -1,3 +1,3 @@
 [[Acción]]
-[[Ero]]
+[[Suspenso]]
 [[Terror]]
