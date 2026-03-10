@@ -1,3 +1,3 @@
-[[Acción]]
+[[Historias/Acción/index]]
 [[Suspenso]]
 [[Terror]]
