@@ -1,1 +1,1 @@
-[[Suspenso]]
+[[Historias/Suspenso/index|Suspenso]]

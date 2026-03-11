@@ -2,7 +2,7 @@
 title: Universo
 ---
 
-[[Acción/index|Acción]]
-[[Suspenso]]
-[[Terror]]
+[[Historias/Suspenso/index]]
+[[Historias/Terror/index]]
 [[Historias/Acción/index|Acción]]
+[[Historias/Suspenso/index]]
