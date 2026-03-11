@@ -2,5 +2,5 @@
 title: Acción
 ---
 
-[[Historias/index]]
+[[Historias/index|Universo]]
 [[Historias/Acción/The infamus/Index|The infamus]]
