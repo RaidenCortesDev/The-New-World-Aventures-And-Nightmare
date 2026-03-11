@@ -1,2 +1,1 @@
-[[Universo]]
 [[indice de Paso|indice de Paso]]

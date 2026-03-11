@@ -1,1 +1,1 @@
-[[Universo/El Crepúsculo del Dios Caído Lamentos y Esperanza/indice]]
+[[indice de El Crepúsculo del Dios Caído Lamentos y Esperanza]]
