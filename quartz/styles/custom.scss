@@ -47,3 +47,19 @@ footer+p {
 .section-summary {
     display: none;
 }
+// 1. Esconde la lista automática de archivos dentro de las carpetas
+.directory-content, 
+.section-summary, 
+.backlinks-header + p {
+  display: none !important;
+}
+
+// 2. Esconde específicamente los enlaces que digan "index" en esas listas
+a[href$="index"] {
+  display: none !important;
+}
+
+// 3. Por si acaso, evita que el título "index" aparezca en grande
+h1.article-title {
+  display: none;
+}
