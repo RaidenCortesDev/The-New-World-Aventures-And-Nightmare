@@ -35,3 +35,15 @@ footer {
         order: 2; // Asegura que quede al final
     }
 }
+
+// Elimina la lista automática de páginas en las carpetas y el conteo de artículos
+.directory-content,
+.backlinks-header+p,
+footer+p {
+    display: none !important;
+}
+
+// Si quieres quitar específicamente el texto de "X artículos en esta carpeta"
+.section-summary {
+    display: none;
+}
